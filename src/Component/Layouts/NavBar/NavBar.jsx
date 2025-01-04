@@ -22,8 +22,9 @@ const NavBar = () => {
   );
 
   return (
-    <div className="lg:w-11/12 mx-auto">
-      <div className="navbar bg-base-100 ">
+    <div className="bg-zinc-800 text-white">
+      <div className="lg:w-11/12 mx-auto ">
+      <div className="navbar  ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,6 +65,7 @@ const NavBar = () => {
           <a className="btn btn-error text-white">Contact Me</a>
         </div>
       </div>
+    </div>
     </div>
   );
 };

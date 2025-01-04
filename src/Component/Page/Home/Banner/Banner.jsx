@@ -5,7 +5,7 @@ import { FacebookOriginal, LinkedinOriginal } from "devicons-react";
 const Banner = () => {
   return (
   <div className="bg-zinc-800">
-      <div className="flex justify-between lg:flex-row flex-col  w-11/12 mx-auto ">
+      <div className="flex justify-between lg:flex-row flex-col-reverse  w-11/12 mx-auto ">
       <div className="space-y-2 flex flex-col justify-center text-slate-100  text-center lg:text-start mt-6">
         <p className="lg:text-2xl text-xl font-semibold">Hello,I'm </p>
         <h1 className="lg:text-5xl text-4xl font-bold">Mohammad Faysal</h1>
@@ -24,8 +24,8 @@ const Banner = () => {
           <div className="text-blue-400"><FaTwitter size={30}/></div>
           <div className="text-"><FacebookOriginal size={30}/></div>
         </div>
-        <div>
-          <button className="btn btn-error">Dowland CV</button>
+        <div className="pb-4">
+          <button className="btn btn-error ">Dowland Resume</button>
         </div>
       </div>
       <div>
