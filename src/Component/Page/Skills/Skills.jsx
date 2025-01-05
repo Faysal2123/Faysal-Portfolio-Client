@@ -1,5 +1,5 @@
 import { 
-    Css3Original, FigmaOriginal, FirebaseOriginal, GitOriginal, Html5Original, 
+    Css3Original, ExpressOriginal, FigmaOriginal, FirebaseOriginal, GitOriginal, Html5Original, 
     JavascriptOriginal, MongodbOriginal, NodejsOriginalWordmark, ReactrouterOriginal, 
     TailwindcssOriginal 
 } from 'devicons-react';
@@ -18,18 +18,19 @@ const skills = [
     { icon: <FirebaseOriginal size={80} />, name: "Firebase" },
     { icon: <NodejsOriginalWordmark size={80} />, name: "Node.js" },
     { icon: <MongodbOriginal size={80} />, name: "MongoDB" },
+    { icon: < ExpressOriginal size={80} />, name: "Express Js" },
 ];
 
 const Skills = () => {
     return ( 
         <div className='bg-zinc-800 lg:pt-16 pt-8 lg:pb-16 pb-8 text-slate-900'>
-            <h1 className='text-5xl text-center font-bold mb-10 text-slate-100'>My Skills</h1>
-            <p className='text-slate-100 lg:w-8/12 mx-auto text-center pb-4'>My expertise includes frontend & backend development, RESTful APIs, and database management. I'm skilled in Tailwind CSS, Firebase, and state management while ensuring clean, efficient, and scalable code.</p>
-            <div className='grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 md:px-16'>
+            <h1 className='text-5xl text-center font-bold lg:mb-10 mb-7 text-slate-100'>My Skills</h1>
+            <p className='text-slate-100 lg:w-8/12 mx-auto text-center pb-4 w-11/12 '>My expertise includes frontend & backend development, RESTful APIs, and database management. I'm skilled in Tailwind CSS, Firebase, and state management while ensuring clean, efficient, and scalable code.</p>
+            <div className='grid  grid-cols-3 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 lg:px-6 md:px-16 w-11/12 mx-auto gap-3'>
                 {skills.map((skill, index) => (
-                    <div key={index} className='bg-gray-200 shadow-lg shadow-zinc-700 rounded-xl p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105'>
+                    <div key={index} className='bg-gray-300 shadow-lg shadow-zinc-700 rounded-xl lg:p-6 p-3 flex flex-col items-center transition-transform duration-300 hover:scale-105 '>
                         {skill.icon}
-                        <h2 className='mt-4 text-xl font-semibold'>{skill.name}</h2>
+                        <h2 className='mt-4 md:text-xl text-base font-semibold'>{skill.name}</h2>
                     </div>
                 ))}
             </div>

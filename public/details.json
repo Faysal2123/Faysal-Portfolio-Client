@@ -1,0 +1,115 @@
+
+   [
+      {
+        "id": 1,
+        "title": "Games Review Project",
+        "image": "https://i.ibb.co.com/wNmTw8k/game1.png",
+        "description": "The Games Review Project is a full-fledged gaming review platform designed for gaming enthusiasts. It allows users to share their experiences, discover new games, and create personalized watchlists. With an interactive design and advanced features, it offers an immersive experience for gamers.",
+        "features": [
+          " **User Authentication** - Secure login and sign-up using Firebase Authentication.",
+          " **Game Review Management** - Users can add, update, and delete game reviews.",
+          " **Watchlist Management** - Save and manage favorite games in a personalized watchlist.",
+          " **Browse Top Rated Games** - Find the most popular games based on community reviews.",
+          " **Smart Filtering and Sorting** - Filter by genre and sort by rating for easier game discovery.",
+          " **Fully Responsive Design** - A seamless experience across devices with a mobile-friendly UI."
+        ],
+        "techStack": {
+          "frontend": "React, React Router, Tailwind CSS, React Hot Toast, SweetAlert2",
+          "backend": "Node.js, Express.js",
+          "database": "MongoDB",
+          "authentication": "Firebase Authentication (Email & Google)"
+        },
+        "apiEndpoints": {
+          "reviews": {
+            "POST": "/addReview",
+            "GET": "/addReview",
+            "DELETE": "/addReview/:id",
+            "PUT": "/addReview/:id"
+          },
+          "watchlist": {
+            "POST": "/watchlist",
+            "GET": "/watchlist",
+            "DELETE": "/watchlist/:id"
+          },
+          "miscellaneous": {
+            "GET": "/highestRatedGames",
+            "GET": "/getAllGames"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Car Rental Project",
+        "image": "https://i.ibb.co.com/WfJwHxn/game2.png",
+        "description": "The Car Rental Project is a fully functional online platform for renting and managing cars. It features user authentication, car listings, and booking functionalities, allowing users to book cars, view available options, and manage their reservations with ease.",
+        "features": [
+          "**User Authentication** - Secure login and registration with Firebase and JWT.",
+          "**Car Management** - Add, update, and delete car listings effortlessly.",
+          "**Booking System** - Users can book cars, view bookings, and manage them.",
+          "**Responsive UI** - Built with React and Tailwind CSS for a modern and mobile-friendly design.",
+          "**Database Management** - MongoDB for storing car listings and booking details.",
+          "**Admin Features** - Admins can manage car listings and handle bookings."
+        ],
+        "techStack": {
+          "frontend": "React, React Router, Firebase Authentication, React Hot Toast, Tailwind CSS",
+          "backend": "Node.js, Express.js, MongoDB",
+          "authentication": "Firebase Authentication, JWT (JSON Web Tokens)",
+          "stateManagement": "Context API"
+        },
+        "apiEndpoints": {
+          "authentication": {
+            "POST": "/jwt",
+            "POST": "/logout"
+          },
+          "cars": {
+            "GET": "/cars",
+            "GET": "/cars/email",
+            "GET": "/cars/:id",
+            "POST": "/cars",
+            "PUT": "/cars/:id",
+            "DELETE": "/cars/:id"
+          },
+          "bookings": {
+            "POST": "/bookings",
+            "GET": "/bookings",
+            "PUT": "/bookings/:id/cancel",
+            "DELETE": "/bookings/:id"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "title": "Coupon Collecting Platform",
+        "image": "https://i.ibb.co.com/8bBtzFs/game3.png",
+        "description": "The Coupon Collecting Platform is an online service designed for users in Bangladesh to collect discount coupons and voucher codes from various e-commerce stores. The platform allows users to easily browse and copy discount codes, making shopping more affordable and convenient.",
+        "features": [
+          "**Interactive Home Page** - A slider showcasing top featured coupons.",
+          "**Brand Section** - Browse coupons by partnered brands and explore offers.",
+          "**Coupon Details** - View detailed information such as discount amounts, expiry dates, and categories.",
+          "**User Authentication** - Secure login and registration using Firebase Authentication (Email & Google).",
+          "**Private Routes** - Protect sensitive pages like 'My Profile' and coupon details.",
+          "**Responsive Design** - Optimized for seamless use across all devices.",
+          "**User Profile** - Users can update their profile and view collected coupons.",
+          "**404 Error Page** - Provides navigation back to the homepage for invalid routes."
+        ],
+        "techStack": {
+          "frontend": "React, React Router, Tailwind CSS",
+          "backendAndDatabase": "Firebase (Authentication & Hosting)",
+          "stateManagement": "React Context API",
+          "icons": "React Icons",
+          "notifications": "react-toastify"
+        },
+        "apiEndpoints": {
+          "coupons": {
+            "GET": "/coupons",
+            "GET": "/coupons/:id"
+          },
+          "userProfile": {
+            "GET": "/profile",
+            "PUT": "/profile"
+          }
+        }
+      }
+    ]
+  
+  

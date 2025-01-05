@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-zinc-700 text-white lg:pt-16 lg:pb-16 pt-10 pb-10">
+    <div className="bg-gray-800/95 text-white lg:pt-28 lg:pb-28 pt-10 pb-10">
       <h1 className="lg:text-5xl text-4xl text-center font-bold">About Me</h1>
       <p className="text-center lg:w-10/12 w-11/12 mx-auto pt-8 lg:text-lg">
       Hello, I'm Mohammad Faysal, a dedicated MERN stack web developer who thrives on building interactive and user-centric web applications. I
