@@ -42,10 +42,11 @@ const NavBar = () => {
               <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-7 w-7 "
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
+                  
                 >
                   <path
                     strokeLinecap="round"
@@ -64,7 +65,7 @@ const NavBar = () => {
             </div>
             <div className="flex items-center">
               <img className="lg:w-20 lg:h-20 h-14 w-14" src={logo} alt="" />
-              <a className="text-4xl font-bold">FAYSAL</a>
+              <a className="md:text-4xl text-3xl font-bold">FAYSAL</a>
             </div>
           </div>
           <div className="navbar-center hidden lg:flex">
@@ -74,7 +75,7 @@ const NavBar = () => {
           </div>
           <div className="navbar-end">
             <ScrollLink to="contact" spy={true} smooth={true} duration={500}>
-              <a className="btn btn-error text-white">Contact Me</a>
+              <a className="btn bg-error border-error lg:font-bold text-white">Contact Me</a>
             </ScrollLink>
           </div>
         </div>
