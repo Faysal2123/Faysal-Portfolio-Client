@@ -59,7 +59,7 @@ const Contact = () => {
             <h2 className="text-xl font-medium mt-3">LinkedIn</h2>
             <p className="text-gray-300">linkedin.com/in/yourprofile</p>
             <Link
-              to="https://linkedin.com/in/yourprofile"
+              to="https://www.linkedin.com/in/mohammad-foysal-dev/"
               target="_blank"
               className="mt-3 text-blue-400 hover:text-blue-300 underline"
             >

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // Import framer-motion
 
 const About = () => {
   return (
-    <div className="bg-gray-800/95 text-white lg:pt-28 lg:pb-28 pt-10 pb-10">
+    <div className="bg-[#1f242d] text-white lg:pt-28 lg:pb-28 pt-10 pb-10">
       <motion.h1
         className="lg:text-5xl text-4xl text-center font-bold"
         initial={{ opacity: 0 }}
@@ -13,7 +13,7 @@ const About = () => {
         About Me
       </motion.h1>
       <motion.p
-        className="text-center lg:w-10/12 w-11/12 mx-auto pt-8 lg:text-lg"
+        className="text-center lg:w-10/12 w-11/12 mx-auto pt-8 lg:text-lg text-balance"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}

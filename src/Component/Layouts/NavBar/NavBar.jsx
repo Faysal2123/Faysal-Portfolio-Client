@@ -1,31 +1,32 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll"; // Import react-scroll
 import logo from "../../../assets/logo.png";
+import logo1 from '../../../assets/fav3.png'
 
 const NavBar = () => {
   const links = (
     <>
-      <li>
+      <li className="hover:text-gray-300">
         <ScrollLink to="home" spy={true} smooth={true} duration={500}>
           HOME
         </ScrollLink>
       </li>
-      <li>
+      <li className="hover:text-gray-300">
         <ScrollLink to="about" spy={true} smooth={true} duration={500}>
           ABOUT
         </ScrollLink>
       </li>
-      <li>
+      <li className="hover:text-gray-300">
         <ScrollLink to="skills" spy={true} smooth={true} duration={500}>
           SKILLS
         </ScrollLink>
       </li>
-      <li>
+      <li className="hover:text-gray-300">
         <ScrollLink to="portfolio" spy={true} smooth={true} duration={500}>
           PORTFOLIO
         </ScrollLink>
       </li>
-      <li>
+      <li className="hover:text-gray-800">
         <ScrollLink to="contact" spy={true} smooth={true} duration={500}>
           CONTACT
         </ScrollLink>
@@ -34,7 +35,7 @@ const NavBar = () => {
   );
 
   return (
-    <div className=" text-white ">
+    <div className=" text-white w-11/12 mx-auto">
       <div className="bg-zinc-800 lg:w-11/12 mx-auto">
         <div className="navbar fixed z-10 bg-opacity-50 left-0 right-0  bg-zinc-800">
           <div className="navbar-start">
@@ -63,12 +64,12 @@ const NavBar = () => {
                 {links}
               </ul>
             </div>
-            <div className="flex items-center">
-              <img className="lg:w-20 lg:h-20 h-14 w-14" src={logo} alt="" />
+            <div className="flex items-center gap-2">
+              <img className="lg:w-11 lg:h-11 h-10 w-10" src={logo1} alt="" />
               <a className="md:text-4xl text-3xl font-bold">FAYSAL</a>
             </div>
           </div>
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden lg:flex ">
             <ul className="menu menu-horizontal px-1 text-base font-semibold">
               {links}
             </ul>
